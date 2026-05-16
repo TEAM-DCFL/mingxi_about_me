@@ -20,7 +20,7 @@ const profileConfig = {
     zh: "中国 / 上海",
     en: "China / Shanghai",
   },
-  githubUrl: "https://github.com/TEAM-DCFL/mingxi_about_me",
+  githubUrl: "https://github.com/TEAM-DCFL",
   tags: ["Full Stack", "Algorithm", "Hardware", "Product Design", "Marketing"],
 };
 
