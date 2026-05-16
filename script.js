@@ -5,20 +5,20 @@ const profileConfig = {
     en: "mingxi",
   },
   title: {
-    zh: "前端产品与增长实践者",
-    en: "Frontend Product and Growth Builder",
+    zh: "AI出海创业者 · 独立开发者 · 技术极客",
+    en: "AI Global Builder · Indie Hacker · Tech Geek",
   },
   description: {
-    zh: "把产品表达、页面体验与执行落地整合成一个清晰的个人主页入口。",
-    en: "A clear personal homepage that brings together product storytelling, UX polish, and execution.",
+    zh: "聚焦 AI 出海产品，把想法快速做成可增长、可验证、可持续演进的真实产品。",
+    en: "Focused on AI products for global markets, turning ideas into real products that can grow, validate, and evolve fast.",
   },
   summary: {
-    zh: "这个主页名片用于快速展示你的方向、能力和代表作品，适合放在 GitHub 首页、作品集导航页或个人介绍链接中。",
-    en: "This homepage card quickly presents your direction, strengths, and flagship work for GitHub, portfolio navigation, or intro links.",
+    zh: "我的产品价值，是把复杂技术转化为用户愿意使用、愿意传播、愿意付费的体验。我既能独立完成从产品设计、前端开发到上线迭代的完整闭环，也擅长用工程化与 AI 工作流提升效率，把产品更快推向全球市场。",
+    en: "My product value is turning complex technology into experiences people want to use, share, and pay for. I can independently drive the full loop from product design and frontend implementation to launch and iteration, while using engineering discipline and AI workflows to move products to global markets faster.",
   },
   location: "Remote / Global",
   githubUrl: "https://team-dcfl.github.io/mingxi_about_me/",
-  tags: ["Frontend", "Product", "Growth", "AI Workflow"],
+  tags: ["AI Global", "Indie Hacker", "Product", "Tech Geek"],
 };
 
 const projects = [
