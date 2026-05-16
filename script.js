@@ -16,7 +16,10 @@ const profileConfig = {
     zh: "我的产品价值，是把复杂技术转化为用户愿意使用、愿意传播、愿意付费的体验。我既能独立完成从产品设计、前端开发到上线迭代的完整闭环，也擅长用工程化与 AI 工作流提升效率，把产品更快推向全球市场。",
     en: "My product value is turning complex technology into experiences people want to use, share, and pay for. I can independently drive the full loop from product design and frontend implementation to launch and iteration, while using engineering discipline and AI workflows to move products to global markets faster.",
   },
-  location: "Remote / Global",
+  location: {
+    zh: "中国 / 上海",
+    en: "China / Shanghai",
+  },
   githubUrl: "https://team-dcfl.github.io/mingxi_about_me/",
   tags: ["AI Global", "Indie Hacker", "Product", "Tech Geek"],
 };
@@ -59,7 +62,7 @@ const messages = {
     githubCta: "访问 GitHub",
     workCta: "查看代表作品",
     focusLabel: "方向",
-    focusValue: "产品、增长、AI",
+    focusValue: "独立开发、AI出海",
     locationLabel: "所在地",
     statusLabel: "状态",
     statusValue: "开放合作中",
@@ -88,7 +91,7 @@ const messages = {
     githubCta: "Visit GitHub",
     workCta: "Featured Work",
     focusLabel: "Focus",
-    focusValue: "Product, Growth, AI",
+    focusValue: "Indie Development, AI Global",
     locationLabel: "Base",
     statusLabel: "Status",
     statusValue: "Open to collaboration",
@@ -167,7 +170,7 @@ function applyLanguage() {
   profileName.textContent = profileConfig.name[state.language];
   profileTitle.textContent = profileConfig.title[state.language];
   profileDescription.textContent = profileConfig.description[state.language];
-  profileLocation.textContent = profileConfig.location;
+  profileLocation.textContent = profileConfig.location[state.language];
   profileSummary.textContent = profileConfig.summary[state.language];
   githubLink.href = profileConfig.githubUrl;
 
