@@ -13,8 +13,8 @@ const profileConfig = {
     en: "With a technical background, I mainly focus on full-stack development and AI application delivery, while continuing to work on product design, growth, and commercialization validation.",
   },
   summary: {
-    zh: "我的产品价值，是把复杂技术转化为用户愿意使用、愿意传播、愿意付费的体验。我既能独立完成从产品设计、前端开发到上线迭代的完整闭环，也擅长用工程化与 AI 工作流提升效率，把产品更快推向全球市场。",
-    en: "My product value is turning complex technology into experiences users want to use, share, and pay for. I can independently complete the full loop from product design and frontend development to launch and iteration, and I use engineering discipline and AI workflows to move products to global markets faster.",
+    zh: "我的产品价值，是从解决实际问题出发，把AI技术转化为用户愿意使用、愿意传播、愿意付费的体验。我既能独立完成从产品设计、前端开发到上线迭代的完整闭环，也擅长用工程化与 AI 工作流提升效率，把产品更快推向全球市场。",
+    en: "My product value starts from solving real problems and turning AI technology into experiences users want to use, share, and pay for. I can independently complete the full loop from product design and frontend development to launch and iteration, and I use engineering discipline and AI workflows to move products to global markets faster.",
   },
   location: {
     zh: "中国 / 上海",
