@@ -61,6 +61,7 @@ const messages = {
     eyebrow: "GitHub 主页",
     githubCta: "访问 GitHub",
     workCta: "查看代表作品",
+    contactCta: "联系我",
     focusLabel: "方向",
     focusValue: "独立开发、AI出海、产品设计、营销",
     locationLabel: "所在地",
@@ -74,7 +75,7 @@ const messages = {
     feature2: "AI 应用落地",
     feature3: "产品设计",
     feature4: "营销增长与商业化验证",
-    projectsTitle: "代表作品模块展示",
+    projectsTitle: "代表作品展示",
     embedFallbackTitle: "如果目标站点禁止 iframe 嵌入，请点击下方按钮直接访问。",
     openSite: "打开网站",
     openSiteShort: "访问站点",
@@ -88,6 +89,7 @@ const messages = {
     eyebrow: "GitHub Homepage",
     githubCta: "Visit GitHub",
     workCta: "Featured Work",
+    contactCta: "Contact Me",
     focusLabel: "Focus",
     focusValue: "Indie Development, AI Global, Product Design, Marketing",
     locationLabel: "Base",
@@ -129,6 +131,7 @@ const profileSummary = document.getElementById("profile-summary");
 const profileTags = document.getElementById("profile-tags");
 const githubLink = document.getElementById("github-link");
 const projectsGrid = document.getElementById("projects-grid");
+const contactButton = document.getElementById("contact-button");
 
 function getInitialLanguage() {
   const stored = window.localStorage.getItem("homepage-language");
@@ -243,8 +246,14 @@ function switchTheme() {
   applyTheme();
 }
 
+function contactMe() {
+  const mailbox = ["2592969099", "qq.com"].join("@");
+  window.location.href = `mailto:${mailbox}`;
+}
+
 langToggle.addEventListener("click", switchLanguage);
 themeToggle.addEventListener("click", switchTheme);
+contactButton.addEventListener("click", contactMe);
 
 applyLanguage();
 applyTheme();
