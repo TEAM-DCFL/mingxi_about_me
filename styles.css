@@ -243,6 +243,9 @@ button {
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   backdrop-filter: blur(16px);
+  width: min(100%, 280px);
+  justify-self: center;
+  padding: 14px;
 }
 
 .avatar-frame {
@@ -394,7 +397,7 @@ button {
   }
 
   .avatar-frame {
-    max-width: 360px;
+    max-width: 280px;
     margin: 0 auto;
   }
 }
