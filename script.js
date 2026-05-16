@@ -1,6 +1,9 @@
 // Edit this object first to replace the demo content with your own profile.
 const profileConfig = {
-  name: "Your Name",
+  name: {
+    zh: "明曦",
+    en: "mingxi",
+  },
   title: {
     zh: "前端产品与增长实践者",
     en: "Frontend Product and Growth Builder",
@@ -161,7 +164,7 @@ function applyLanguage() {
   langToggle.textContent = copy.langButton;
   themeToggle.textContent = copy.themeButton;
 
-  profileName.textContent = profileConfig.name;
+  profileName.textContent = profileConfig.name[state.language];
   profileTitle.textContent = profileConfig.title[state.language];
   profileDescription.textContent = profileConfig.description[state.language];
   profileLocation.textContent = profileConfig.location;
