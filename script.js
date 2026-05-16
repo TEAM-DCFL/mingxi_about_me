@@ -131,7 +131,9 @@ const profileSummary = document.getElementById("profile-summary");
 const profileTags = document.getElementById("profile-tags");
 const githubLink = document.getElementById("github-link");
 const projectsGrid = document.getElementById("projects-grid");
+const contactWrap = document.getElementById("contact-wrap");
 const contactButton = document.getElementById("contact-button");
+const contactPopover = document.getElementById("contact-popover");
 
 function getInitialLanguage() {
   const stored = window.localStorage.getItem("homepage-language");
@@ -246,14 +248,35 @@ function switchTheme() {
   applyTheme();
 }
 
-function contactMe() {
-  const mailbox = ["2592969099", "qq.com"].join("@");
-  window.location.href = `mailto:${mailbox}`;
+function getMailbox() {
+  return ["2592969099", "qq.com"].join("@");
+}
+
+function showContact() {
+  contactPopover.textContent = getMailbox();
+  contactWrap.classList.add("is-open");
+  contactButton.setAttribute("aria-expanded", "true");
+}
+
+function hideContact() {
+  contactWrap.classList.remove("is-open");
+  contactButton.setAttribute("aria-expanded", "false");
+}
+
+function toggleContact() {
+  if (contactWrap.classList.contains("is-open")) {
+    hideContact();
+    return;
+  }
+
+  showContact();
 }
 
 langToggle.addEventListener("click", switchLanguage);
 themeToggle.addEventListener("click", switchTheme);
-contactButton.addEventListener("click", contactMe);
+contactButton.addEventListener("click", toggleContact);
+contactWrap.addEventListener("mouseenter", showContact);
+contactWrap.addEventListener("mouseleave", hideContact);
 
 applyLanguage();
 applyTheme();

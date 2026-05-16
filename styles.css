@@ -229,6 +229,35 @@ button {
   gap: 12px;
 }
 
+.contact-wrap {
+  position: relative;
+}
+
+.contact-popover {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 220px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--surface-strong);
+  box-shadow: var(--shadow);
+  color: var(--text);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease;
+}
+
+.contact-wrap.is-open .contact-popover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .primary-button,
 .secondary-button {
   padding: 12px 18px;
@@ -411,6 +440,17 @@ button {
   .secondary-button,
   .project-link {
     width: 100%;
+  }
+
+  .contact-wrap {
+    width: 100%;
+  }
+
+  .contact-popover {
+    left: 0;
+    right: 0;
+    min-width: 0;
+    white-space: normal;
   }
 
   .name-row {
