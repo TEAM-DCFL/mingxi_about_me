@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Homepage Card</title>
+    <meta
+      name="description"
+      content="A bilingual personal homepage card with dark mode and featured website embeds."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#hero" data-i18n="brand">Personal Card</a>
+        <div class="topbar-actions">
+          <button
+            class="toggle-button"
+            id="lang-toggle"
+            type="button"
+            aria-label="Toggle language"
+          >
+            中文 / EN
+          </button>
+          <button
+            class="toggle-button"
+            id="theme-toggle"
+            type="button"
+            aria-label="Toggle theme"
+          >
+            Light / Dark
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-card" id="hero">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="eyebrow">GitHub Homepage</p>
+            <h1 id="profile-name">Your Name</h1>
+            <p class="hero-title" id="profile-title">Frontend Builder</p>
+            <p class="hero-description" id="profile-description">
+              Building practical web products with clear UX and strong execution.
+            </p>
+
+            <div class="hero-tags" id="profile-tags"></div>
+
+            <div class="hero-actions">
+              <a
+                class="primary-button"
+                id="github-link"
+                href="https://github.com/"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="githubCta"
+              >
+                Visit GitHub
+              </a>
+              <a
+                class="secondary-button"
+                href="#featured-projects"
+                data-i18n="workCta"
+              >
+                Featured Work
+              </a>
+            </div>
+          </div>
+
+          <aside class="profile-panel">
+            <div class="metric-card">
+              <span class="metric-label" data-i18n="focusLabel">Focus</span>
+              <strong class="metric-value" data-i18n="focusValue"
+                >Product, Growth, AI</strong
+              >
+            </div>
+            <div class="metric-card">
+              <span class="metric-label" data-i18n="locationLabel">Base</span>
+              <strong class="metric-value" id="profile-location">Remote</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label" data-i18n="statusLabel">Status</span>
+              <strong class="metric-value" data-i18n="statusValue"
+                >Open to collaboration</strong
+              >
+            </div>
+          </aside>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading">
+            <p class="section-kicker" data-i18n="aboutKicker">About</p>
+            <h2 data-i18n="aboutTitle">A homepage card with product context</h2>
+          </div>
+          <div class="about-grid">
+            <article class="content-card">
+              <h3 data-i18n="summaryTitle">Profile Summary</h3>
+              <p id="profile-summary">
+                This page introduces your skills, product direction, and flagship
+                work in one place.
+              </p>
+            </article>
+            <article class="content-card">
+              <h3 data-i18n="stackTitle">What this page supports</h3>
+              <ul class="feature-list">
+                <li data-i18n="feature1">Chinese and English switching</li>
+                <li data-i18n="feature2">Light and dark mode switching</li>
+                <li data-i18n="feature3">Featured website embed modules</li>
+                <li data-i18n="feature4">Responsive layout for desktop and mobile</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block" id="featured-projects">
+          <div class="section-heading">
+            <p class="section-kicker" data-i18n="projectsKicker">Featured Sites</p>
+            <h2 data-i18n="projectsTitle">Representative website modules</h2>
+            <p class="section-description" data-i18n="projectsDesc">
+              Each module includes a live embed area and project highlights.
+            </p>
+          </div>
+          <div class="projects-grid" id="projects-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <template id="project-template">
+      <article class="project-card">
+        <div class="project-head">
+          <div>
+            <p class="project-badge"></p>
+            <h3 class="project-title"></h3>
+          </div>
+          <a class="project-link" target="_blank" rel="noreferrer"></a>
+        </div>
+        <p class="project-description"></p>
+        <div class="project-tags"></div>
+        <div class="project-embed-shell">
+          <iframe
+            class="project-embed"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            sandbox="allow-scripts allow-forms allow-same-origin"
+            title=""
+          ></iframe>
+          <div class="embed-fallback">
+            <p class="embed-fallback-title" data-i18n="embedFallbackTitle">
+              Preview blocked by target site security policy.
+            </p>
+            <a class="secondary-button embed-fallback-link" target="_blank" rel="noreferrer" data-i18n="openSite">
+              Open Site
+            </a>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
