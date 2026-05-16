@@ -17,8 +17,8 @@ const profileConfig = {
     en: "My product value is turning complex technology into experiences users want to use, share, and pay for. I can independently complete the full loop from product design and frontend development to launch and iteration, and I use engineering discipline and AI workflows to move products to global markets faster.",
   },
   location: {
-    zh: "中国 / 上海",
-    en: "China / Shanghai",
+    zh: "中国 杭州 / 上海",
+    en: "China Hangzhou / Shanghai",
   },
   githubUrl: "https://team-dcfl.github.io/mingxi_about_me/",
   tags: ["Full Stack", "Algorithm", "Hardware", "Product Design", "Marketing"],
