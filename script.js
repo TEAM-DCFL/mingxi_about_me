@@ -1,7 +1,7 @@
 // Edit this object first to replace the demo content with your own profile.
 const profileConfig = {
   name: {
-    zh: "阿铭",
+    zh: "mingxi",
     en: "mingxi",
   },
   title: {
