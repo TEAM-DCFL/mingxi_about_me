@@ -9,7 +9,7 @@ const profileConfig = {
     en: "AI Global Builder · Tech Geek",
   },
   description: {
-    zh: "技术出身，主做全栈开发与 AI 应用落地，也持续关注产品设计以及营销增长与商业化验证。",
+    zh: "技术出身，主做全栈独立开发与 AI 应用落地，也持续关注产品设计以及营销增长与商业化验证。",
     en: "With a technical background, I mainly focus on full-stack development and AI application delivery, while continuing to work on product design, growth, and commercialization validation.",
   },
   summary: {
