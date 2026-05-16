@@ -5,7 +5,7 @@ const profileConfig = {
     en: "mingxi",
   },
   title: {
-    zh: "AI出海创业者 · 技术技客",
+    zh: "AI出海创业者 · 技术极客",
     en: "AI Global Builder · Tech Geek",
   },
   description: {
